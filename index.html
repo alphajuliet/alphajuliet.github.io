@@ -1,1 +1,116 @@
-Hello.
+<!doctype html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js ie6 oldie" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js ie7 oldie" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!-- Consider adding an manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"
+	xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/" 
+	xmlns:dct="http://purl.org/dc/terms/"
+	xmlns:cc="http://web.resource.org/cc/"
+	xmlns:foaf="http://xmlns.com/foaf/0.1/"
+	xmlns:contact="http://www.w3.org/2000/10/swap/pim/contact"
+	xmlns:ajppl="http://alphajuliet.com/ns/People#"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+	<title>[alphajuliet]</title>
+	<meta name="description" content="alphajuliet.com home page">
+	<meta name="author" content="andrewj">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" href="images/favicon.ico"/>
+
+	<link rel="stylesheet" href="css/alphajuliet.css">
+	<link rel="stylesheet" href="css/logo.css">
+	<!-- <link rel="stylesheet/less" type="text/css" href="css/logo.less"/> -->
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
+
+	<!-- openID -->
+	<!-- <link rel="openid.server" href="http://www.myopenid.com/server" /> -->
+	<!-- <link rel="openid.delegate" href="http://alphajuliet.myopenid.com/" /> -->
+
+	<!-- FOAF data about me -->
+	<link rel="meta" type="application/rdf+xml" title="FOAF" href="foaf.rdf" />
+
+	<!-- <script src="js/libs/modernizr-2.0.6.min.js"></script> -->
+</head>
+
+<body>
+	<div id="container">
+  
+		<header>
+			<img src="images/maitre.jpg" alt="'Le maître de l'école' by René Magritte" />
+			<p id="textlogo">❉ alphajuliet.com</p>	
+		</header>
+
+		<div id="main" role="main">
+	
+			<!-- <h1 class="toggle">twitter</h1> -->
+			<!-- <div class="box"> -->
+			<!-- 	<p><a href="http://twitter.com/alphajuliet">@alphajuliet</a></p> -->
+			<!-- 	<script src="http://widgets.twimg.com/j/2/widget.js"></script> -->
+			<!-- 	<script src="js/twitter.js"></script> -->			
+			<!-- </div> -->			
+			
+			<h1 class="toggle">photos</h1>
+			<div class="box">
+        <p><a href="https://instagram.com/_alphajuliet_/">Instagram</a</p>
+				<p><a href="https://alphajuliet.com/photos">Flickr</a></p>
+			</div>
+				
+			<h1 class="toggle">music</h1>
+			<div class="box">
+        <p><a href="https://soundcloud.com/cyjet/">Cyjet</a> on SoundCloud</p>
+        <p><a href="https://cyjet.glitch.me/">Cyjet</a> mini site (all tracks)</p>
+				<p><a href="https://alphajuliet.com/dda/">DrDrAardvark</a></p>
+			</div>
+
+			<h1 class="toggle">lab</h1>
+			<div class="box">
+        <p><a href="https://github.com/alphajuliet/">Github</a> repo</p>
+				<p><a href="https://genpwd.glitch.me/">GenPwd</a> password
+        generator</p>
+				<p><a href="https://alphajuliet.com/lab/flipppr">flipppr</a> canvas art</p>
+			</div>
+
+			<h1 class="toggle">blog</h1>
+			<div class="box">
+				<p>follicle<sup>2</sup> at <a href="https://alphajuliet.com/blog">http://alphajuliet.com/blog</a></p>
+			</div>
+			
+			
+			<h1 class="toggle">about</h1>		
+			<div class="box">
+				<p>This page was last updated on <span about="" property="dct:modified" datatype="xsd:date">2018-07-30</span>.
+				All content on this site is licensed under a <a rel="licence" href="http://creativecommons.org/licences/by/3.0/">Creative Commons licence</a>.
+				This page annotated with <a href="http://rdfa.info/wiki/RDFa_Wiki">RDFa</a>, and uses <a href="http://jquery.com">jQuery</a>.
+				</p>
+				<a href="foaf.rdf"><img src="images/foafButton.gif" alt="FOAF"/></a>
+			</div>
+				
+		</div>
+			
+		<footer>
+		</footer>
+
+	</div> <!--! end of #container -->
+
+  <!-- JavaScript at the bottom for fast page loading -->
+
+  <script src="js/libs/jquery-3.3.1.slim.min.js"></script>
+  <!-- <script src="js/libs/less-3.0.0.min.js"></script> -->
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/less.js/3.0.0/less.min.js" ></script> -->
+  <script src="js/alphajuliet.js"></script>
+	
+  <!--[if lt IE 7 ]>
+    <script src="//ajax.googleapis.com/ajax/libs/chrome-frame/1.0.3/CFInstall.min.js"></script>
+    <script>window.attachEvent('onload',function(){CFInstall.check({mode:'overlay'})})</script>
+  <![endif]-->
+  
+</body>
+</html>

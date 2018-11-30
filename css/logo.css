@@ -1,0 +1,42 @@
+/* Logo CSS */
+
+#band {
+	position: absolute;
+	padding: 10pt 50pt 10pt 50pt;
+	margin: 10pt 0pt 0pt -20pt;
+	box-shadow: 0px 5px 5px #ccc;
+	background-color: #f8f8f8;
+}
+
+#logo {
+	font-size: 36pt;
+	font-family: Garamond, serif;
+	text-align: center;
+}
+	
+#logo div {
+  padding: 0pt 2pt;
+  margin: -3pt 0pt;
+}
+
+#logo1 {
+	color: #ffce49;
+	background-color: #8049ff;
+	font-size: 105%;
+}
+
+#logo2 {
+	font-weight: bold;
+	color: #8049ff;
+	background-color: #ffce49;
+}
+
+/* For phones */
+@media screen and (max-width: 480px) #logo { font-size: 25pt; }
+
+#textlogo {
+	font-size: 28pt;
+	font-weight: 400;
+}
+
+/* The End */
