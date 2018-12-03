@@ -85,3 +85,92 @@ appending to this document.
 View my publicly-auditable identity here: https://keybase.io/alphajuliet
 
 ==================================================================
+
+==================================================================
+https://keybase.io/alphajuliet
+--------------------------------------------------------------------
+
+I hereby claim:
+
+  * I am an admin of https://alphajuliet.com
+  * I am alphajuliet (https://keybase.io/alphajuliet) on keybase.
+  * I have a public key with fingerprint 2019 CB7D 4CE5 67FB BDAF  73C4 6438 4D45 83E3 6846
+
+To do so, I am signing this object:
+
+{
+  "body": {
+    "key": {
+      "eldest_kid": "0101889bce666d76f8c0473661afad41ebb1940a07d0a87979ea33bcf5ed388400010a",
+      "fingerprint": "2019cb7d4ce567fbbdaf73c464384d4583e36846",
+      "host": "keybase.io",
+      "key_id": "64384d4583e36846",
+      "kid": "0101889bce666d76f8c0473661afad41ebb1940a07d0a87979ea33bcf5ed388400010a",
+      "uid": "62a502c1201f5bff67f20b1607e49a00",
+      "username": "alphajuliet"
+    },
+    "merkle_root": {
+      "ctime": 1543796812,
+      "hash_meta": "901398ca3114b30761ab108e5f7d9fee68950f9fcb884d8eeaa62f2523608901",
+      "seqno": 4041306
+    },
+    "revoke": {
+      "sig_ids": [
+        "1582d339d9119f8bbf79e1cee2dffa36f0ea98aeb048c725c2fcd48626e8c8da0f"
+      ]
+    },
+    "service": {
+      "hostname": "alphajuliet.com",
+      "protocol": "https:"
+    },
+    "type": "web_service_binding",
+    "version": 1
+  },
+  "ctime": 1543796825,
+  "expire_in": 157680000,
+  "prev": "05dbf9109389345963edc6353c78a760be8a24f4b4862a0be0ff2e3a90b53540",
+  "seqno": 12,
+  "tag": "signature"
+}
+
+which yields the signature:
+
+-----BEGIN PGP MESSAGE-----
+Version: Keybase OpenPGP v2.0.80
+Comment: https://keybase.io/crypto
+
+yMPWAnicrZN9bBRFGMZbSw9BSAnBSrSoLCEV0sLszu7s7BULFDAq1WAkgWrNZXZ3
+pl3auy13e3f9gAI1FGgBAwWKH4AgFFMRFK6WGqC0YAVblA9RsUIMrXyofIoiplBn
+UWOi/ulfm9l5nvf9zfPOHByYENc//tOPE7JXbSlbEt/eOiccl9unOKdM0G2zRPCW
+CQX07ocWmjTk+AosU/AKQAQixppuUISQqSKGDSCrECGRMGLKItV1UZMBAaoJCFY1
+VaMEQt1gCjUhxjIAvAIR0gRmBfJosChoBRxeVgKiZuiqKRtUQSrTdZMwFRoykiGW
+TVnBkEKEZcSN+XbIdXA4nYToGMvm//jCdxfvP/T/M3f4jz4SUYBkiJybKTpjnFkC
+uoiASmWNAOAKQzQYIH7K1aSwKJ/MChda1BHmpgl+GiwopL6gbTtuvoZjuSpRkaGq
+ISxK/IwklO/zU4dwswZEqGGDQFGUdQhUTqyLAFOFqabGKEVYUwDTmKFzTBNTSgiS
+mKRIEAHMzRwlRGcHbMErA1mEAHGCII3YBdRtHrLyeHIhwfuiICpYMiHUTE0UNYZ1
+nfEQRINSyWSMQMQAJRomVAcyNlRJMSRmmDJGEqLYwCYBTHhprtssGLGMu8XdUf07
+gjGG7edQRUHbsQ27kG/mO05RyOtG45QUueoo1X1/1vHpVsDkd4U7IjQYsuwAj4or
+/5GapKQJtLjIClKf5SoUFWE+M+D2oRH3AiimzjQRaBBrUFY0BKlpIKhAQ8VERUCn
+mEgyk3X3RIQvAWMShUQDugIVGfwdozsgh+Txmjy8AHHCQSrMbW3J7RMX3z/Ok3iP
++4ji+vcb9NfTqgOD4mq6FwbKn9rsO5+EkqPHq9pPLWzL+axdPFSdWrtucezkyNv9
+xi48nvX8qIN9Z9/uif3y4K6MFSn1V/qse7iyXPht+8s9F8WGd3qSJM+GAUPHPpIe
+uUrPtCXtvdqblVLdMulIR/aSuouPXT9RnTIkWnlntzzstOl9pfPa6hGrv5jxyRp7
+4hvNXw+/vm9txuS89XdqjqVUZd8cM7CpX+65F2Lxgx96csKmiq11qd3pjybkrmzY
+HFuJxncuWLvnWmPyT0e+u5EQqRu3ra2rL+5lT+/YlTazVJ7n2f3Dj5c6TnrGhjft
+Tzw388MFdQvaN646O95/qzHfSHHypwz9aM++HLJle6x4hXG4q3reN5cvn71yqvzn
+qOFtuzF/9JyqkqWrI9g35/FMOMXfta8jL/GJ2SOOHi+p2H+/cKzi+wsTSydcGF1/
+wNPW2vDcm433Nvc0LN2WkXFiMz1/oOaBsJ9NmjQgZkeFsgE3dw7rSKVJiR/A+t50
+0nVi6t7pU17Lmbaod81Jb1b4y6kNg5cvToh2oiFZB3HB5MTadMHz7I1RXxW8FzhE
+IpXTa82uQZ3dntM3h+UM319ZXP766XdrMruu1cd+beqGi0dG7ebhl9prS5+xWi7C
+iuRX11elnN92mdzXlNno3yqxwc7OVrt03sZlR5t945JnbVimbtmROG3X+y3Xc98y
+m+Ynn7k1ImfG4VWZ325d9Pa4z38HerAJkg==
+=MBbS
+-----END PGP MESSAGE-----
+
+And finally, I am proving ownership of this host by posting or
+appending to this document.
+
+View my publicly-auditable identity here: https://keybase.io/alphajuliet
+
+==================================================================
+
