@@ -1,0 +1,217 @@
+@prefix : <http://alphajuliet.com/ns/ont/network#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix net: <http://alphajuliet.com/ns/ont/network#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix owlTime: <http://www.w3.org/2006/time#> .
+@base <http://alphajuliet.com/ns/ont/network#> .
+
+<http://alphajuliet.com/ns/ont/network#> rdf:type owl:Ontology ;
+                                         
+                                         dc:date "2012-12-14T00:00:00Z"^^xsd:dateTime ;
+                                         
+                                         rdfs:comment "A limited vocabulary to fill in gaps around FOAF and ORG"@en .
+
+
+#################################################################
+#
+#    Annotation properties
+#
+#################################################################
+
+
+dc:creator rdf:type owl:AnnotationProperty .
+
+
+
+skos:prefLabel rdf:type owl:AnnotationProperty .
+
+
+
+dc:date rdf:type owl:AnnotationProperty .
+
+
+
+
+
+#################################################################
+#
+#    Datatypes
+#
+#################################################################
+
+
+
+
+#################################################################
+#
+#    Object Properties
+#
+#################################################################
+
+
+###  http://alphajuliet.com/ns/ont/network#colleagueOf
+
+net:colleagueOf rdf:type owl:ObjectProperty ,
+                         owl:SymmetricProperty ,
+                         owl:TransitiveProperty ;
+                
+                rdfs:label "colleagueOf" ;
+                
+                dc:date "2012-12-14T11:49:00Z"^^xsd:dateTime ;
+                
+                skos:prefLabel "colleagueOf" ;
+                
+                rdfs:comment "The subject is a work colleague of the object."@en ;
+                
+                rdfs:range foaf:Person ;
+                
+                rdfs:domain foaf:Person .
+
+
+
+###  http://alphajuliet.com/ns/ont/network#drinks
+
+net:drinks rdf:type owl:ObjectProperty ;
+           
+           rdfs:label "drinks"@en ;
+           
+           dc:date "2012-12-28T00:00:00Z"^^xsd:dateTime ;
+           
+           owl:versionInfo "Unstable." ;
+           
+           rdfs:comment "What the person likes to drink."@en ;
+           
+           skos:prefLabel "drinks"@en ;
+           
+           rdfs:domain foaf:Person .
+
+
+
+###  http://alphajuliet.com/ns/ont/network#isCustomerOf
+
+net:isCustomerOf rdf:type owl:ObjectProperty ;
+                 
+                 rdfs:label "isCustomerOf" ;
+                 
+                 rdfs:comment "The inverse of hasCustomer." ;
+                 
+                 skos:prefLabel "isCustomerOf" ;
+                 
+                 dc:date "2012-12-24T12:19:00Z" ;
+                 
+                 rdfs:range foaf:Agent ;
+                 
+                 rdfs:domain foaf:Agent .
+
+
+
+###  http://alphajuliet.com/ns/ont/network#preferredHotDrink
+
+net:preferredHotDrink rdf:type owl:ObjectProperty ;
+                      
+                      rdfs:label "preferredHotDrink" ;
+                      
+                      skos:prefLabel "preferredHotDrink" ;
+                      
+                      rdfs:comment "A person's preferred hot drink, for when having a coffee meeting. May be replaced by the drink property."@en ;
+                      
+                      owl:versionInfo "Unstable."@en .
+
+
+
+###  http://alphajuliet.com/ns/ont/network#workedFor
+
+net:workedFor rdf:type owl:ObjectProperty ;
+              
+              rdfs:label "workedFor" ;
+              
+              rdfs:comment "An agent worked for this organization at some time in the past." ;
+              
+              skos:prefLabel "workedFor" ;
+              
+              dc:date "2012-11-03T00:00:00Z" ;
+              
+              rdfs:range org:Organization ;
+              
+              rdfs:domain foaf:Person .
+
+
+
+###  http://alphajuliet.com/ns/ont/network#worksAt
+
+net:worksAt rdf:type owl:ObjectProperty ;
+            
+            rdfs:label "hasCustomer" ;
+            
+            rdfs:comment "Shows a relationship between a person or a company to another company or person."@en ;
+            
+            skos:prefLabel "hasCustomer" ;
+            
+            dc:date "2012-12-24T00:00:00Z" ;
+            
+            dc:creator "http://alphajuliet.com/ns/Person#AndrewJ" ;
+            
+            owl:inverseOf net:isCustomerOf ;
+            
+            owl:propertyDisjointWith net:worksFor ;
+            
+            rdfs:domain foaf:Agent ;
+            
+            rdfs:range foaf:Agent .
+
+
+
+###  http://alphajuliet.com/ns/ont/network#worksFor
+
+net:worksFor rdf:type owl:ObjectProperty ;
+             
+             rdfs:label "worksFor"@en ;
+             
+             dc:date "2012-11-04T00:00:00Z"^^xsd:dateTime ;
+             
+             rdfs:comment "A property generally generated by inference from an org:Membership."@en ;
+             
+             rdfs:range org:Organization ;
+             
+             rdfs:domain foaf:Person .
+
+
+
+
+
+#################################################################
+#
+#    Classes
+#
+#################################################################
+
+
+###  http://www.w3.org/ns/org#Organization
+
+org:Organization rdf:type owl:Class .
+
+
+
+###  http://xmlns.com/foaf/0.1/Agent
+
+foaf:Agent rdf:type owl:Class .
+
+
+
+###  http://xmlns.com/foaf/0.1/Person
+
+foaf:Person rdf:type owl:Class .
+
+
+
+
+###  Generated by the OWL API (version 3.2.5.1928) http://owlapi.sourceforge.net
+

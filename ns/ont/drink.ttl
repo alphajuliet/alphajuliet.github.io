@@ -1,0 +1,115 @@
+@prefix : <http://alphajuliet.com/ns/ont/drink#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix drink: <http://alphajuliet.com/ns/ont/drink#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix db: <http://dbpedia.org/resource/> .
+@prefix dbo: <http://dbpedia.org/ontology/> .
+
+@base <http://alphajuliet.com/ns/ont/drink#> .
+
+<http://alphajuliet.com/ns/ont/drink#> 
+	rdf:type owl:Ontology ;                                    
+	rdfs:comment "A limited vocabulary around mainly hot drinks"@en .
+
+# Hot drinks
+
+drink:Long_black rdf:type owl:Class ;
+	skos:exactMatch db:Long_black ;
+	rdfs:label "Long Black"@en ;
+	skos:prefLabel "Long Black"@en ;
+	dc:date "2012-12-24T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "A shot of coffee with added hot water."@en .
+
+drink:Flat_white rdf:type owl:Class ;
+	skos:exactMatch db:Flat_white ;
+	rdfs:label "Flat White"@en ;
+	rdfs:label "Café au lait"@fr ;
+	skos:prefLabel "Flat White"@en ;
+	dc:date "2012-12-24T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "A shot of coffee with added steamed milk."@en .
+
+drink:Latte rdf:type owl:Class ;
+	skos:exactMatch db:Latte ;
+	skos:prefLabel "Latte"@en ;
+	rdfs:label "Caffe Latte"@en ;
+	rdfs:label "Latte"@en ;
+	dc:date "2012-12-24T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "A shot of coffee with added steamed milk."@en .
+
+drink:Macchiato rdf:type owl:Class ;
+	skos:exactMatch db:Caffè_macchiato ;
+	skos:prefLabel "Macchiato"@en ;
+	rdfs:label "Caffè Macchiato"@en ;
+	rdfs:label "Espresso Macchiato"@en ;
+	rdfs:label "Macchiato"@en ;
+	dc:date "2012-12-24T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "A shot of coffee with a small amount of steamed milk."@en .
+
+drink:Hot_chocolate rdf:type owl:Class ;
+	skos:exactMatch db:Hot_chocolate ;
+	rdfs:label "Hot chocolate"@en ;
+	skos:prefLabel "Hot chocolate"@en ;
+	rdfs:label "Chocolat chaud"@fr ;
+	dc:date "2012-12-24T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "Hot chocolate"@en .
+
+drink:Soy_hot_chocolate rdf:type owl:Class ;
+	rdfs:subclassOf db:Hot_chocolate ;
+	rdfs:label "Soy Hot Chocolate"@en ;
+	skos:prefLabel "Soy Hot Chocolate"@en ;
+	dct:subject <http://dbpedia.org/resource/Category:Chocolate_beverages> ;
+	dc:date "2012-11-22T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "Hot chocolate prepared with soy milk."@en .
+	
+drink:Soy_latte rdf:type owl:Class ;
+	rdfs:subclassOf db:Latte ;
+	rdfs:label "Soy Latte"@en ;
+	skos:prefLabel "Soy Latte"@en ;
+	dct:subject <http://dbpedia.org/resource/Category:Coffee_beverages> ;
+	dc:date "2012-11-22T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "Cafe latte prepared with soy milk."@en .
+
+drink:Soy_flat_white rdf:type owl:Class ;
+	rdfs:subclassOf db:Flat_white ;
+	rdfs:label "Soy Flat White"@en ;
+	skos:prefLabel "Soy Flat White"@en ;
+	dct:subject <http://dbpedia.org/resource/Category:Coffee_beverages> ;
+	dc:date "2012-11-22T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "Flat white coffee prepared with soy milk."@en .
+
+drink:Soy_caffè_macchiato rdf:type owl:Class ;
+	rdfs:subclassOf db:Caffè_macchiato;
+	rdfs:label "Soy caffè macchiato"@en ;
+	skos:prefLabel "Soy macchiato"@en ;
+	dct:subject <http://dbpedia.org/resource/Category:Coffee_beverages> ;
+	dc:date "2012-11-22T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "Caffè macchiato prepared with soy milk."@en .
+
+drink:Long_macchiato rdf:type owl:Class ;
+	rdfs:subclassOf db:Caffè_macchiato;
+	rdfs:label "Long caffè macchiato"@en ;
+	skos:prefLabel "Long macchiato"@en ;
+	dct:subject <http://dbpedia.org/resource/Category:Coffee_beverages> ;
+	dc:date "2012-11-22T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "A caffè macchiato with additional hot water."@en .
+
+drink:Skim_latte rdf:type owl:Class ;
+	rdfs:subclassOf db:Latte;
+	rdfs:label "Skim latte"@en ;
+	skos:prefLabel "Skim latte"@en ;
+	dct:subject <http://dbpedia.org/resource/Category:Coffee_beverages> ;
+	dc:date "2012-12-01T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "A latte made with skim milk."@en .
+
+drink:Black_tea rdf:type owl:Class ;
+	rdfs:subclassOf db:Drink;
+	rdfs:label "Black tea"@en ;
+	dct:subject <http://dbpedia.org/resource/Drink> ;
+	dc:date "2012-12-01T00:00:00Z"^^xsd:dateTime ;
+	rdfs:comment "Black tea with no milk."@en .
