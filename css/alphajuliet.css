@@ -229,9 +229,9 @@ header img {
 	width: 150px;
 	margin-left: 0pt;
 	margin-top: 5pt;
-	-moz-box-shadow: 5px 5px 3px #999;
-	-webkit-box-shadow: 5px 5px 3px #999;
-	box-shadow: 5px 5px 3px #999;	
+	/* -moz-box-shadow: 5px 5px 3px #999; */
+	/* -webkit-box-shadow: 5px 5px 3px #999; */
+	/* box-shadow: 5px 5px 3px #999;	 */
 }
 
 #main {
