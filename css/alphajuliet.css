@@ -213,7 +213,7 @@ td { vertical-align: top; }
    
 #container {
 	margin-left: 50pt;   
-	margin-top: 50pt;
+	margin-top: 20pt;
 	max-width: 640px;
 	font-family: Abel, Helvetica, Arial, sans-serif;	
 	font-size: 10pt;
@@ -221,11 +221,11 @@ td { vertical-align: top; }
 }
 
 header p {
-	margin-left: 150pt;
+	margin-left: 0pt;
 }
 
 header img {
-	float: left;
+	float: fixed;
 	width: 150px;
 	margin-left: 0pt;
 	margin-top: 5pt;
@@ -236,7 +236,7 @@ header img {
 
 #main {
 	margin-top: 10pt;
-	margin-left: 150pt;
+	margin-left: 0pt;
 }
 
 footer, .box {
@@ -264,9 +264,9 @@ a:visited { color: #999; }
 
 ul li {
 	list-style: none;
-	margin: 5pt 0pt 5pt -30pt;
+	margin: 5pt 0pt 5pt -10pt;
 	border-left: 5pt solid #ccc;
-	padding-left: 10pt;
+	padding-left: 0pt;
 }
 
 li:nth-child(odd) {
@@ -274,10 +274,13 @@ li:nth-child(odd) {
 }
 
 @media screen and (max-width: 480px) {
+   #container {
+      margin-left: 20pt;   
+   }
 	#main {
 		top: 90pt;
-		margin-left: 20pt;
-	}
+		margin-left: 0pt;
+   }
 }
 
 
