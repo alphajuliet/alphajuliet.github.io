@@ -34,7 +34,11 @@ html { font-size: 100%; overflow-y: scroll; -webkit-text-size-adjust: 100%; -ms-
 
 body { margin: 0; font-size: 13px; line-height: 1.231; }
 
-body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+body, button, input, select, textarea { 
+  background-color: #334;
+  font-family: sans-serif; 
+  color: #fff; 
+}
 
 /* 
  * Remove text-shadow in selection highlight: h5bp.com/i
@@ -50,9 +54,9 @@ body, button, input, select, textarea { font-family: sans-serif; color: #222; }
    Links
    ========================================================================== */
 
-a { color: #00e; }
-a:visited { color: #551a8b; }
-a:hover { color: #06e; }
+a { color: #ccf; }
+a:visited { color: #ccf; }
+a:hover { color: #fcf; }
 a:focus { outline: thin dotted; }
 
 /* Improve readability when focused and hovered in all browsers: h5bp.com/h */
@@ -217,7 +221,7 @@ td { vertical-align: top; }
 	max-width: 640px;
 	font-family: Abel, Helvetica, Arial, sans-serif;	
 	font-size: 10pt;
-	color: #444;
+	color: #ccc;
 }
 
 header p {
@@ -227,16 +231,12 @@ header p {
 header img {
 	float: fixed;
 	width: 150px;
-	margin-left: 0pt;
-	margin-top: 5pt;
-	/* -moz-box-shadow: 5px 5px 3px #999; */
-	/* -webkit-box-shadow: 5px 5px 3px #999; */
-	/* box-shadow: 5px 5px 3px #999;	 */
+  margin: 5pt 0pt;
+  border-radius: 4px;
 }
 
 #main {
-	margin-top: 10pt;
-	margin-left: 0pt;
+  margin: 10pt 0pt;
 }
 
 footer, .box {
@@ -256,7 +256,7 @@ h1.toggle {
 
 a { 
 	text-decoration: none; 
-	color: #444;
+	color: #aaf;
 }
 
 a:hover { color: #999; }
